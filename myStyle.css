@@ -88,6 +88,8 @@ a:hover {
     grid-template-columns: 320px 320px;
     grid-gap: 4rem;
     width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 .project {
