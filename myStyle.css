@@ -82,3 +82,14 @@ a:hover {
     margin: 0 auto 6rem auto;
     font-size: 3rem;
 }
+
+.project-tile {
+    display: grid;
+    grid-template-columns: 320px 320px;
+    grid-gap: 4rem;
+    width: 100%;
+}
+
+.project {
+    background: black;
+}
