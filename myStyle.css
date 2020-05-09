@@ -1,5 +1,6 @@
 main {
   font-family: 'Poppins', sans-serif;  
+  color: #2A3132;
 }
 
 
@@ -7,6 +8,7 @@ main {
     list-style: none;
     display: flex;
     margin-right: 2rem;
+    align-items: center;
 }
 
 a {
@@ -14,6 +16,11 @@ a {
     color: whitesmoke;
     padding: 20px;
     font-size: 20px;
+    display: block;
+}
+
+a:hover {
+    color: black;
 }
 
 .nav {
@@ -22,7 +29,8 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
+  height: 5em;
   background: #763626;
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
   z-index: 10;
@@ -35,11 +43,42 @@ a {
     align-items: center;
     width: 100%;
     height: 100vh;
-    background: #2A3132;
+    background: linear-gradient(90deg, #5f5f5f, #2A3132);
 }
 
 .me{
-    font-size: 6rem;
-    font-family: 'Raleway', sans-serif;
-    color: whitesmoke
+    font-size: 5.3rem;
+    font-family: 'Poppins', sans-serif;
+    color:#f0f0f0;
+    text-shadow:2px 2px black;
+    text-align: center;
+}
+
+@media (max-width: 29em){
+    .nav {
+        justify-content: center;
+    }
+}
+
+.welcome-section > p {
+    font-size: 3em;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: #be3144;
+    font-style: italic;
+    font-weight: 200;
+    margin-top: 0em;
+}
+
+.proj {
+    text-align: center;
+    padding: 10rem 2rem;
+    background: #336B87;
+}
+
+.proj > h2 {
+    color: #f0f0f0;
+    max-width: 800px;
+    margin: 0 auto 6rem auto;
+    font-size: 3rem;
 }
